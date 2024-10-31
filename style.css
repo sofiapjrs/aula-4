@@ -145,3 +145,61 @@ footer{
     border-bottom: 1px solid black;
     text-decoration: none;
 }
+
+.caixa-input{
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width:500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 100px ;
+}
+
+.caixa-icone{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.input-pesquisa{
+    flex: 1;
+    height: 22px;
+    border: none;
+    outline: none;
+}
+
+.icone-input{
+    width: 20px;
+    min-width: 20px;
+    fill: #9aa0a6;
+}
+
+.icone-colorido{
+width: 24px;
+height: 24px;
+fill: #9aa0a6;
+}
+
+.icone-teclado{
+width: 24px;
+height: 24px;
+fill: #9aa0a6;
+}
+
+.botao{
+padding: 10px 30px;
+font-family: arial;
+border-radius: 4px;
+font-size: 14px;
+background-color: #f8f9fa;
+border: none;
+cursor: pointer;
+}
+
+.caixa-botoes{
+    display:flex;
+    gap: 8px;
+    margin-bottom: 10vh;
+}
