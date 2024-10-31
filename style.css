@@ -20,12 +20,12 @@ h1 {
     color:red;
 }
 
-main img {
+.logo-google {
     height: 92px;
     display: block;
     margin: 0 auto; 
-    margin-top: 110px;
-    margin-bottom: 425px;
+    margin-top: 150px;
+    margin-bottom: 280px;
 }
 
 a{
@@ -145,4 +145,3 @@ footer{
     border-bottom: 1px solid black;
     text-decoration: none;
 }
-
