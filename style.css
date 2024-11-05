@@ -23,13 +23,14 @@ h1 {
 .logo-google {
     height: 92px;
     display: block;
-    margin: 0 auto; 
-    margin-top: 150px;
-    margin-bottom: 280px;
+    margin: 50px auto 20px auto;  
+   
 }
 
 a{
     text-decoration: none;
+    color: #000000de;
+    font-size: 13px;
 }
 
 .link-cabecalho{
@@ -88,13 +89,12 @@ footer{
 }
 
 .caixa-rodape--borda{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(202, 202, 202);
 }
 
 .caixa-links{
     display: flex;
     gap: 30px;
-    justify-content:flex-start;
 }
 
 .caixa-link{
@@ -106,7 +106,7 @@ footer{
 .botao-login{
     background-color: #0b57d0; 
     color: white; 
-    padding: 10px 12px;
+    padding: 12px 10px;
     border: none; 
     border-radius: 100px; 
     font-size: 14px; 
@@ -155,6 +155,7 @@ footer{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 100px ;
+    margin-top: 20px;
 }
 
 .caixa-icone{
@@ -165,41 +166,106 @@ footer{
 
 .input-pesquisa{
     flex: 1;
-    height: 22px;
+    height: 34px;
     border: none;
     outline: none;
+    font-size: 16px;
 }
 
 .icone-input{
     width: 20px;
     min-width: 20px;
     fill: #9aa0a6;
+    align-self: center;
 }
 
 .icone-colorido{
 width: 24px;
 height: 24px;
 fill: #9aa0a6;
+align-self: center;
 }
 
 .icone-teclado{
-width: 24px;
-height: 24px;
+width: 22px;
+height: 12px;
 fill: #9aa0a6;
+align-self: center;
+}
+.caixa-icone img, .caixa-icone svg{
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: auto;
 }
 
 .botao{
-padding: 10px 30px;
-font-family: arial;
-border-radius: 4px;
+background-color: white;
+color: black;
+padding: 10px 12px;
+border: 1px solid transparent;
+border-radius: 10px;
 font-size: 14px;
-background-color: #f8f9fa;
-border: none;
 cursor: pointer;
+}
+
+.botao:hover{
+    border: 1px solid rgb(199, 197, 197);
 }
 
 .caixa-botoes{
     display:flex;
+    justify-content: center;
     gap: 8px;
-    margin-bottom: 10vh;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
+
+.glogo {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-dispon {
+    margin-top: 20px; 
+}
+
+.portuga {
+    color: blue;
+}
+
+.icons {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icons .icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
