@@ -24,7 +24,6 @@ h1 {
     height: 92px;
     display: block;
     margin: 50px auto 20px auto;  
-   
 }
 
 a{
@@ -38,21 +37,10 @@ a{
     font-size: 13px;
 }
 
-.caixa-icone{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-
-}
-
-
 h1 {
     color: rgb(0, 0, 0);
     font-size: 24px;
 }
-
 
 a {
     text-decoration: none;
@@ -121,11 +109,6 @@ footer{
         border-bottom: 1px solid black; 
         text-decoration: none; 
     }
-    
-    .caixa-links sobre:hover{
-        border-bottom:1px solid black;
-        text-decoration:none;
-    }
 
 .caixa-links a{
     position: relative;
@@ -136,7 +119,6 @@ footer{
     text-decoration: none;
 }
 
-
 .caixa-link a{
     position: relative;
 }
@@ -146,30 +128,64 @@ footer{
     text-decoration: none;
 }
 
-.caixa-input{
-
+.caixa-icone{
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 10px;
-    width:500px;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+
+}
+
+.tooltip{
+    visibility: hidden;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding:5px  10px;
+    border-radius:5px;
+    font-size:12px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.caixa-icone:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+
+.caixa-input {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    width: 500px; 
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 100px ;
-    margin-top: 20px;
+    border-radius: 100px; 
+    box-sizing: border-box; 
 }
 
-.caixa-icone{
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.input-pesquisa{
+.input-pesquisa {
     flex: 1;
     height: 34px;
+    padding: 0 10px;
     border: none;
+    border-radius: 100px;
     outline: none;
     font-size: 16px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.input-pesquisa:hover,
+.input-pesquisa:focus {
+    border-color: #4a4a4b; 
+    box-shadow: 0 0 10px rgba(74, 74, 75, 0.6); 
 }
 
 .icone-input{
@@ -177,6 +193,11 @@ footer{
     min-width: 20px;
     fill: #9aa0a6;
     align-self: center;
+}
+
+.icone-input:hover + .tooltip{
+visibility: visible;
+opacity: 1;
 }
 
 .icone-colorido{
@@ -192,6 +213,7 @@ height: 12px;
 fill: #9aa0a6;
 align-self: center;
 }
+
 .caixa-icone img, .caixa-icone svg{
     display: block;
     margin: 0;
